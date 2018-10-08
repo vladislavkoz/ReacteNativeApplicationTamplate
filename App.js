@@ -11,7 +11,9 @@ export default class App extends React.Component {
   render() {
     if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
       return (
-        <View></View>
+        <View>
+          <AppLoading />
+        </View>
       );
     } else {
       return (
